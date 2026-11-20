@@ -45,6 +45,7 @@ Press **Reset demo** on `/nfc` before each run.
 | `/advisor` | Restricted advisor queue |
 | `/nfc` | NFC demo console with QR fallback |
 | `/t/[tagId]` | Phone landing page when a tag is tapped |
+| `/nfc/display`, `/nfc/manager`, `/nfc/intern` | Live cross-device NFC demo (Firebase Realtime Database). Setup in README → Live NFC Demo |
 | `/roi`, `/roadmap` | ROI calculator, roadmap and misuse safeguards |
 | `POST /api/tap` | `{ tagId, stationType?, partnerTagId? }` |
 | `GET /api/tap/events?since=` | Recent tap events (clients poll every 1.5s). `DELETE` resets the demo. |

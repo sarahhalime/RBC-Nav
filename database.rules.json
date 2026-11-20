@@ -1,0 +1,49 @@
+{
+  "rules": {
+    ".read": false,
+    ".write": false,
+    "demos": {
+      "$session": {
+        ".read": "$session.matches(/^[a-z0-9-]{3,40}$/)",
+        ".write": "$session.matches(/^[a-z0-9-]{3,40}$/)",
+        ".validate": "newData.hasChildren(['internName', 'recognitionPoints', 'wrappedUnlocked', 'unlockCount', 'resetAt', 'updatedAt'])",
+        "internName": { ".validate": "newData.val() === 'Maya Patel'" },
+        "recognitionPoints": {
+          ".validate": "newData.isNumber() && (newData.val() === 1250 || (data.exists() && (newData.val() === data.val() || newData.val() === data.val() + 250))) && newData.val() <= 11250"
+        },
+        "wrappedUnlocked": { ".validate": "newData.isBoolean()" },
+        "unlockCount": {
+          ".validate": "newData.isNumber() && (newData.val() === 0 || (data.exists() && (newData.val() === data.val() || newData.val() === data.val() + 1))) && newData.val() <= 500"
+        },
+        "unlockedAt": { ".validate": "newData.isNumber() && newData.val() <= now + 60000" },
+        "resetAt": { ".validate": "newData.isNumber() && newData.val() <= now + 60000" },
+        "updatedAt": { ".validate": "newData.isNumber() && newData.val() <= now + 60000" },
+        "recognitions": {
+          "$rid": {
+            ".validate": "$rid.matches(/^[A-Za-z0-9_-]{8,64}$/) && (!data.exists() || newData.child('at').val() === data.child('at').val()) && newData.hasChildren(['id', 'category', 'message', 'points', 'pointsBefore', 'pointsAfter', 'at']) && newData.child('id').val() === $rid && newData.child('pointsAfter').val() === newData.child('pointsBefore').val() + 250",
+            "id": { ".validate": "newData.isString()" },
+            "category": { ".validate": "newData.val() === 'Collaboration' || newData.val() === 'Innovation' || newData.val() === 'Leadership' || newData.val() === 'Continuous Learning' || newData.val() === 'Making a Difference'" },
+            "message": { ".validate": "newData.isString() && newData.val().length >= 3 && newData.val().length <= 280" },
+            "points": { ".validate": "newData.val() === 250" },
+            "pointsBefore": { ".validate": "newData.isNumber()" },
+            "pointsAfter": { ".validate": "newData.isNumber()" },
+            "at": { ".validate": "newData.isNumber() && newData.val() <= now + 60000" },
+            "$other": { ".validate": false }
+          }
+        },
+        "latestRecognition": {
+          ".validate": "newData.hasChildren(['id', 'category', 'message', 'points', 'pointsBefore', 'pointsAfter', 'at']) && newData.parent().child('recognitions').child(newData.child('id').val()).exists()",
+          "id": { ".validate": "newData.isString()" },
+          "category": { ".validate": "newData.isString()" },
+          "message": { ".validate": "newData.isString() && newData.val().length <= 280" },
+          "points": { ".validate": "newData.val() === 250" },
+          "pointsBefore": { ".validate": "newData.isNumber()" },
+          "pointsAfter": { ".validate": "newData.isNumber()" },
+          "at": { ".validate": "newData.isNumber()" },
+          "$other": { ".validate": false }
+        },
+        "$other": { ".validate": false }
+      }
+    }
+  }
+}

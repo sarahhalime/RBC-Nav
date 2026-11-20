@@ -40,13 +40,15 @@ const LINKS: Record<Role, { href: string; label: string }[]> = {
 };
 
 /** Routes that run full screen, mobile first, without the top bar. */
-const IMMERSIVE = ["/t/", "/intern/wrapped"];
+const IMMERSIVE = ["/t/", "/intern/wrapped", "/nfc/"];
 
 export function AppShell({ children }: { children: ReactNode }) {
   const pathname = usePathname();
   const role = useCompass((s) => s.role);
   const hydrated = useHydrated();
   const immersive = IMMERSIVE.some((p) => pathname.startsWith(p));
+  // Live NFC demo screens (/nfc/intern, /nfc/manager, /nfc/display) own their bottom corners.
+  const liveDemo = pathname.startsWith("/nfc/");
   const links = LINKS[hydrated ? role : "intern"];
 
   return (
@@ -122,7 +124,7 @@ export function AppShell({ children }: { children: ReactNode }) {
         </span>
       </div>
       <Toaster />
-      <GuidedDemo />
+      {!liveDemo && <GuidedDemo />}
     </>
   );
 }
