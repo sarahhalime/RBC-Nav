@@ -1,10 +1,10 @@
-# 🧭 RBC Compass
+# 🧭 RBC Nav
 
 ### Your journey. Your voice. Your future.
 
 **Empowering early talent. Capturing authentic experiences. Driving meaningful change.**
 
-RBC Compass is a privacy-first digital career companion designed to enhance the early talent experience while enabling RBC to identify disengagement, uncover systemic challenges and proactively support its next generation of talent.
+RBC Nav is a privacy-first digital career companion designed to enhance the early talent experience while enabling RBC to identify disengagement, uncover systemic challenges and proactively support its next generation of talent.
 
 ## 🎯 The Challenge
 
@@ -12,11 +12,11 @@ How can RBC better capture the voices of early talent participants, identify stu
 
 Traditional feedback mechanisms may capture concerns too late. Interns may also hesitate to communicate challenges due to uncertainty, fear of judgment or lack of accessible support.
 
-RBC Compass reimagines feedback as a continuous, rewarding and personalized experience.
+RBC Nav reimagines feedback as a continuous, rewarding and personalized experience.
 
 ## 💡 Our Solution
 
-Rather than introducing another employee survey, RBC Compass creates an everyday career companion that gives interns a reason to engage.
+Rather than introducing another employee survey, RBC Nav creates an everyday career companion that gives interns a reason to engage.
 
 Our solution is built around four pillars:
 
@@ -27,7 +27,7 @@ Our solution is built around four pillars:
 
 ## ✨ Key Features
 
-### ☀️ Daily Compass
+### ☀️ Daily Nav
 
 A personalized dashboard designed to launch when interns begin their workday.
 
@@ -46,7 +46,7 @@ An optional end-of-day reflection, designed to take approximately 30 seconds.
 - AI-powered theme identification and support recommendations.
 - Consent-based feedback sharing.
 
-### 🤖 Ask Compass
+### 🤖 Ask Nav
 
 An AI-powered career companion designed to help interns navigate their professional journey.
 
@@ -99,7 +99,7 @@ A comprehensive, end-of-internship celebration summarizing the participant's ent
 
 An aggregated overview of collective achievements, experiences and opportunities for program improvement.
 
-### 🏆 Compass Rewards
+### 🏆 Nav Rewards
 
 A proposed integration with RBC's existing employee recognition ecosystem.
 
@@ -113,18 +113,18 @@ Interns can celebrate eligible achievements through:
 
 Recognition is designed to reward meaningful contributions, never the disclosure of personal information or the submission of positive feedback.
 
-### 💳 NFC Compass Card
+### 💳 NFC Nav Card
 
 A physical companion to the digital experience.
 
-- Tap to access Compass.
+- Tap to access Nav.
 - Tap to connect with colleagues.
 - Tap to access professional achievements.
 - Tap to unwrap personalized internship highlights.
 
 Future implementation could explore integration with existing RBC employee work passes, subject to security approval.
 
-### 📊 Compass Insights
+### 📊 Nav Insights
 
 An aggregated analytics dashboard designed for early talent program leaders.
 
@@ -147,7 +147,7 @@ Interns can see how collectively shared feedback contributes to changes within t
 
 Trust is fundamental to capturing authentic feedback.
 
-RBC Compass proposes three levels of data visibility:
+RBC Nav proposes three levels of data visibility:
 
 | Level | Description |
 |---|---|
@@ -175,7 +175,7 @@ flowchart TD
     B --> C[AI-Powered Theme Analysis]
     C --> D[Privacy and Consent Controls]
     C --> E[Personalized Recommendations]
-    D -->|Opt-in aggregated themes| F[Compass Insights]
+    D -->|Opt-in aggregated themes| F[Nav Insights]
     D -->|Explicit support consent| G[Early Talent Advisor]
     F --> H[Program Improvements]
     G --> I[Proactive Support]
@@ -183,12 +183,12 @@ flowchart TD
     I --> J
     A --> K[Career Passport]
     K --> L[Intern Wrapped]
-    K --> M[Compass Rewards]
+    K --> M[Nav Rewards]
 ```
 
 ## 🏦 Built for RBC. Built on RBC.
 
-Rather than replacing existing infrastructure, RBC Compass proposes leveraging RBC's existing ecosystem:
+Rather than replacing existing infrastructure, RBC Nav proposes leveraging RBC's existing ecosystem:
 
 - RBC Academies.
 - Employee Voice.
@@ -203,7 +203,7 @@ All integrations are conceptual and subject to organizational approval, technica
 
 ## 📈 Potential Business Impact
 
-RBC Compass aims to deliver value for both interns and the organization.
+RBC Nav aims to deliver value for both interns and the organization.
 
 | For Early Talent | For RBC |
 |---|---|
@@ -216,7 +216,7 @@ RBC Compass aims to deliver value for both interns and the organization.
 
 ### One Minute. Meaningful Impact.
 
-Designed around an approximately one-minute daily experience, RBC Compass aims to minimize disruption while maximizing long-term value.
+Designed around an approximately one-minute daily experience, RBC Nav aims to minimize disruption while maximizing long-term value.
 
 For an illustrative cohort of 250 interns over 16 weeks:
 
@@ -238,7 +238,7 @@ These figures are hypothetical and assume 15 minutes saved per intern per week. 
 
 ## 🛠️ Hackathon Prototype
 
-RBC Compass was conceptualized as part of the RBC Women's Technical Advisory Program Hackathon.
+RBC Nav was conceptualized as part of the RBC Women's Technical Advisory Program Hackathon.
 
 The prototype showcases the proposed user experience, product functionality, privacy architecture and organizational impact using illustrative scenarios and synthetic data.
 
@@ -251,8 +251,8 @@ Our signature interactive demo genuinely works in real time across two phones an
 | Device | URL | What it does |
 |---|---|---|
 | Laptop on projector | `https://<your-domain>/nfc/display` | Live balance, locked Wrapped, recognition notifications, cinematic Intern Wrapped |
-| Leadership Compass Card: Tap to Recognize | `https://<your-domain>/nfc/manager` | Judge picks a category, writes a message, awards 250 points |
-| Intern Compass Card: Tap to Unwrap | `https://<your-domain>/nfc/intern` | Maya's portal, live points, Unlock My Wrapped |
+| Leadership Nav Card: Tap to Recognize | `https://<your-domain>/nfc/manager` | Judge picks a category, writes a message, awards 250 points |
+| Intern Nav Card: Tap to Unwrap | `https://<your-domain>/nfc/intern` | Maya's portal, live points, Unlock My Wrapped |
 
 No app needs installing. Each card stores a plain HTTPS URL record, and the phone opens it natively.
 
@@ -306,8 +306,8 @@ Open `https://<your-domain>/nfc/display`. The badge in the top right should say 
 ### 4. Write the physical NFC cards (manual)
 
 1. Install **NFC Tools** (iOS or Android).
-2. **Write → Add a record → URL/URI**. Enter `https://<your-domain>/nfc/manager`, then **Write** and hold the **Leadership Compass Card** to the phone.
-3. Repeat with `https://<your-domain>/nfc/intern` on the **Intern Compass Card**.
+2. **Write → Add a record → URL/URI**. Enter `https://<your-domain>/nfc/manager`, then **Write** and hold the **Leadership Nav Card** to the phone.
+3. Repeat with `https://<your-domain>/nfc/intern` on the **Intern Nav Card**.
 4. Test each card on an iPhone (screen unlocked, tap the top edge) and on an Android phone (NFC on, tap the back). iPhone shows a banner; tap it to open.
 5. Optional, once you're certain the URLs are final: NFC Tools can **lock** a tag. This is permanent, so the card can never be rewritten.
 6. QR fallbacks: on the display, hover the bottom-right corner and press the **QR** button. It shows scannable codes for both cards, built from `NEXT_PUBLIC_BASE_URL`.
@@ -321,10 +321,10 @@ Open `https://<your-domain>/nfc/display`. The badge in the top right should say 
 
 ### Live presentation sequence
 
-1. Laptop on `/nfc/display`, fullscreen, showing **Live**, 1,250 points and "Waiting for Compass Card activation...".
-2. A judge taps the **Leadership Compass Card**, awards Maya recognition and 250 points.
+1. Laptop on `/nfc/display`, fullscreen, showing **Live**, 1,250 points and "Waiting for Nav Card activation...".
+2. A judge taps the **Leadership Nav Card**, awards Maya recognition and 250 points.
 3. Everyone watches the balance rise live with the notification and gold confetti.
-4. Another judge taps the **Intern Compass Card** and presses **Unlock My Wrapped**.
+4. Another judge taps the **Intern Nav Card** and presses **Unlock My Wrapped**.
 5. The display reveals Maya's Wrapped: 16 weeks, 12 skills, 18 connections, 6 projects, 8 milestones, the live points total and the new achievements. It ends with "Your internship ends. Your journey doesn't."
 
 Wrapped auto-advances and holds on the final slide. Arrow keys move between slides and `Esc` closes it. After closing, the locked card on the display becomes a **Replay Wrapped** button.
@@ -369,4 +369,4 @@ Grow throughout the journey.
 
 ---
 
-### 🧭 RBC Compass — Retaining talent starts with listening to it.
+### 🧭 RBC Nav — Retaining talent starts with listening to it.

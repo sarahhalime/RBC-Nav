@@ -59,7 +59,7 @@ export default function ManagerCard() {
           <div className="flex items-center gap-2">
             <CompassLogo size={30} />
             <span className="font-display text-[17px] font-bold text-white">
-              RBC <span className="text-rbc-yellow">Compass</span>
+              RBC <span className="text-rbc-yellow">Nav</span>
             </span>
           </div>
           <ConnectionBadge status={status} />
@@ -87,7 +87,7 @@ export default function ManagerCard() {
           ) : (
             <motion.div key="form" initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -16 }}>
               <div className="mt-8">
-                <p className="eyebrow">Leadership Compass Card</p>
+                <p className="eyebrow">Leadership Nav Card</p>
                 <h1 className="h-display mt-2 text-3xl leading-tight">Recognize an intern</h1>
               </div>
 

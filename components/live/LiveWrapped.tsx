@@ -166,7 +166,7 @@ export function LiveWrapped({ state, onClose }: { state: LiveDemoState; onClose:
             <h2 className="h-display text-glow mt-2 text-[7vw] leading-[1] text-rbc-yellow">Your journey doesn&apos;t.</h2>
           </Rise>
           <Rise delay={2} className="mt-10 flex items-center gap-3 text-[1.6vw] text-rbc-mist/70">
-            <CompassLogo size={40} success /> RBC Compass
+            <CompassLogo size={40} success /> RBC Nav
           </Rise>
         </div>
       ),

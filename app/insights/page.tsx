@@ -162,7 +162,7 @@ function Insights() {
                     content={
                       <>
                         <p className="font-semibold text-white">How scores work</p>
-                        <p className="mt-1">Expected: rated 4 or 5 out of 5 in the onboarding Expectation Compass.</p>
+                        <p className="mt-1">Expected: rated 4 or 5 out of 5 in the onboarding Expectation Nav.</p>
                         <p className="mt-1">
                           Experienced: score = {BLEND.self * 100}% self-reported (reflections, Wrapped check-ins) + {BLEND.tap * 100}% tap verified (at least one verified experience in the window). Counts as experienced at {BLEND.threshold} or above.
                         </p>

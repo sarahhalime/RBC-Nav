@@ -32,7 +32,7 @@ const LINKS: Record<Role, { href: string; label: string }[]> = {
   leader: [
     { href: "/insights", label: "Insights" },
     { href: "/act", label: "We Acted" },
-    { href: "/nfc", label: "Compass card" },
+    { href: "/nfc", label: "Nav card" },
     { href: "/roi", label: "ROI" },
     { href: "/roadmap", label: "Roadmap" },
   ],
@@ -61,10 +61,10 @@ export function AppShell({ children }: { children: ReactNode }) {
       {!immersive && (
         <header className="sticky top-0 z-40 border-b border-white/[0.06] bg-rbc-ink/60 backdrop-blur-xl">
           <div className="mx-auto flex h-16 max-w-7xl items-center gap-3 px-4 sm:px-6">
-            <Link href="/" className="flex shrink-0 items-center gap-2" aria-label="RBC Compass home">
+            <Link href="/" className="flex shrink-0 items-center gap-2" aria-label="RBC Nav home">
               <CompassLogo size={30} />
               <span className="font-display text-[17px] font-bold tracking-tight text-white">
-                RBC <span className="text-rbc-yellow">Compass</span>
+                RBC <span className="text-rbc-yellow">Nav</span>
               </span>
             </Link>
             <nav aria-label="Main" className="no-scrollbar ml-2 hidden flex-1 items-center gap-1 overflow-x-auto lg:flex">

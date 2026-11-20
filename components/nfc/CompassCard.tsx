@@ -67,7 +67,7 @@ export function CompassCard({
               <CompassLogo size={38} success={success} />
               <div>
                 <p className="font-display text-sm font-bold tracking-[0.2em] text-[#C9A961]">RBC</p>
-                <p className="-mt-0.5 font-display text-lg font-bold text-white">Compass</p>
+                <p className="-mt-0.5 font-display text-lg font-bold text-white">Nav</p>
               </div>
             </div>
             <Nfc size={30} className="text-[#C9A961]" />

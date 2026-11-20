@@ -171,7 +171,7 @@ export default function WrappedPage() {
             })}
           </div>
           <Line delay={0.8} className="mt-3 text-xs text-rbc-mist/50">
-            From your Compass nametag taps. Type of experience only, never location.
+            From your Nav nametag taps. Type of experience only, never location.
           </Line>
         </div>
       ),
@@ -267,7 +267,7 @@ export default function WrappedPage() {
             <div className="flex items-center gap-2">
               <CompassLogo size={30} success />
               <span className="font-display font-bold text-white">
-                RBC <span className="text-rbc-gold">Compass</span> Wrapped
+                RBC <span className="text-rbc-gold">Nav</span> Wrapped
               </span>
             </div>
             <p className="mt-1 text-xs text-rbc-mist/50">Maya · Weeks 5 to 6</p>
@@ -293,9 +293,9 @@ export default function WrappedPage() {
             <button
               onClick={async (e) => {
                 e.stopPropagation();
-                const text = `My RBC Compass Wrapped, weeks 5 to 6: ${data.connections} connections, ${data.experiences} experiences, ${MAYA_PROFILE.skills.length} new skills.`;
+                const text = `My RBC Nav Wrapped, weeks 5 to 6: ${data.connections} connections, ${data.experiences} experiences, ${MAYA_PROFILE.skills.length} new skills.`;
                 try {
-                  if (navigator.share) await navigator.share({ title: "My Compass Wrapped", text });
+                  if (navigator.share) await navigator.share({ title: "My Nav Wrapped", text });
                   else {
                     await navigator.clipboard.writeText(text);
                     toast({ title: "Copied share-safe summary" });
@@ -428,7 +428,7 @@ export default function WrappedPage() {
           </div>
           <div className="mt-3 flex items-center justify-between">
             <span className="flex items-center gap-2 text-xs font-semibold text-white/80">
-              <CompassLogo size={22} /> Compass Wrapped
+              <CompassLogo size={22} /> Nav Wrapped
             </span>
             <div className="flex gap-1">
               <button aria-label={paused ? "Play" : "Pause"} onClick={() => setPaused((p) => !p)} className="grid h-8 w-8 place-items-center rounded-full bg-white/10 text-white">

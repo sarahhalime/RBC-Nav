@@ -43,7 +43,7 @@ export default function InternGapPage() {
         }
         right={
           <Link href="/intern/expectations" className="btn-ghost">
-            <Compass size={16} /> Redo my Expectation Compass
+            <Compass size={16} /> Redo my Expectation Nav
           </Link>
         }
       >

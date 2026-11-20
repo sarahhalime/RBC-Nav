@@ -198,7 +198,7 @@ function Reflect() {
               <div className="flex items-center gap-3">
                 <CompassLogo size={40} success />
                 <div>
-                  <p className="font-display text-xl font-bold text-white">Saved. Here is what Compass noticed.</p>
+                  <p className="font-display text-xl font-bold text-white">Saved. Here is what Nav noticed.</p>
                   <p className="text-xs text-rbc-mist/60">Deterministic keyword themes. Same words, same result, every time.</p>
                 </div>
               </div>

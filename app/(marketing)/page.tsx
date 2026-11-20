@@ -70,14 +70,14 @@ export default function Landing() {
             ))}
           </h1>
           <motion.p initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.7 }} className="mt-6 max-w-xl text-lg leading-relaxed text-rbc-mist/75">
-            RBC Compass is a privacy-first career companion for interns. It compares what they expected from RBC with what they actually experience, so leaders can act before great people leave.
+            RBC Nav is a privacy-first career companion for interns. It compares what they expected from RBC with what they actually experience, so leaders can act before great people leave.
           </motion.p>
           <motion.div initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.85 }} className="mt-8 flex flex-wrap gap-3">
             <Magnetic className="btn-primary px-7 py-3.5 text-base" onClick={startDemo}>
               <PlayCircle size={20} /> Start the demo
             </Magnetic>
             <Magnetic className="btn-ghost px-6 py-3.5 text-base" href="/nfc">
-              <Nfc size={18} /> Compass card
+              <Nfc size={18} /> Nav card
             </Magnetic>
           </motion.div>
           <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 1.1 }} className="mt-10 flex flex-wrap gap-8">
@@ -130,7 +130,7 @@ export default function Landing() {
         }
       >
         <p>Early talent forms its view of RBC in the first weeks. The signals are there: a mentor who keeps rescheduling, a team you never get to meet, no idea what comes next.</p>
-        <p>Compass captures that voice every day, in 50 seconds, and turns it into action while the intern is still here.</p>
+        <p>Nav captures that voice every day, in 50 seconds, and turns it into action while the intern is still here.</p>
       </Section>
 
       <Section
@@ -175,7 +175,7 @@ export default function Landing() {
 
       <Section
         id="nfc"
-        eyebrow="Hero feature · NFC Compass Nametag"
+        eyebrow="Hero feature · NFC Nav Nametag"
         title={
           <>
             Real moments, <span className="text-rbc-gold">tap verified.</span>
