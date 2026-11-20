@@ -11,6 +11,7 @@ import type { Role } from "@/lib/types";
 import { Background, CursorGlow } from "../ui/Background";
 import { CompassLogo } from "../ui/CompassLogo";
 import { GuidedDemo } from "./GuidedDemo";
+import { ProfileMenu } from "./ProfileMenu";
 import { RoleSwitcher } from "./RoleSwitcher";
 import { Toaster } from "./Toaster";
 import { LiveSync } from "../LiveSync";
@@ -21,8 +22,6 @@ const LINKS: Record<Role, { href: string; label: string }[]> = {
     { href: "/intern/reflect", label: "Reflect" },
     { href: "/intern/gap", label: "My Gap" },
     { href: "/intern/wrapped", label: "Wrapped" },
-    { href: "/intern/vault", label: "Vault" },
-    { href: "/nfc", label: "NFC" },
     { href: "/act", label: "We Acted" },
   ],
   advisor: [
@@ -33,7 +32,7 @@ const LINKS: Record<Role, { href: string; label: string }[]> = {
   leader: [
     { href: "/insights", label: "Insights" },
     { href: "/act", label: "We Acted" },
-    { href: "/nfc", label: "NFC" },
+    { href: "/nfc", label: "Compass card" },
     { href: "/roi", label: "ROI" },
     { href: "/roadmap", label: "Roadmap" },
   ],
@@ -88,8 +87,9 @@ export function AppShell({ children }: { children: ReactNode }) {
                 );
               })}
             </nav>
-            <div className="ml-auto">
+            <div className="ml-auto flex items-center gap-2">
               <RoleSwitcher />
+              {hydrated && role === "intern" && <ProfileMenu />}
             </div>
           </div>
           <nav aria-label="Main mobile" className="no-scrollbar flex gap-1 overflow-x-auto px-4 pb-2 lg:hidden">

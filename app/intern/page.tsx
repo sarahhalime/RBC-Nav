@@ -35,7 +35,7 @@ const TILES = [
   { href: "/intern/reflect", label: "Reflect", body: "30 seconds tonight", icon: MessageSquareText, tone: "from-rbc-blue/40" },
   { href: "/intern/wrapped", label: "Wrapped", body: "Weeks 5 to 6 are ready", icon: Sparkles, tone: "from-rbc-yellow/25" },
   { href: "/intern/gap", label: "My Gap", body: "Expected vs lived", icon: Radar, tone: "from-rbc-sky/30" },
-  { href: "/intern/vault", label: "Vault", body: "You control sharing", icon: Shield, tone: "from-success/25" },
+  { href: "/intern/vault", label: "Profile settings", body: "You control sharing", icon: Shield, tone: "from-success/25" },
 ];
 
 const ASK = [

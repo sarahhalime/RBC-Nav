@@ -10,7 +10,7 @@ const BUILT = [
   "Leader dashboard: Gap Landscape, Gap Velocity alerts, Retention Pressure",
   "Gap Closer simulator with cost, effort and owner",
   "NFC tag landing page, tap API, live demo console and QR fallback",
-  "Intern app: check-in, reflection with on-device themes, Wrapped, Vault",
+  "Intern app: check-in, reflection with on-device themes, Wrapped, Profile settings",
   "Opt-in support flow and restricted advisor queue",
 ];
 

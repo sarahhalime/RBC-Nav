@@ -16,7 +16,7 @@ const LEVELS: { level: ConsentLevel; title: string; icon: typeof Lock; body: str
     title: "Private",
     icon: EyeOff,
     body: "Everything stays with you. Your Wrapped and Gap still work.",
-    shares: ["Nothing leaves your Vault"],
+    shares: ["Nothing leaves your profile"],
   },
   {
     level: 2,
@@ -49,9 +49,9 @@ export default function VaultPage() {
 
   const choose = (level: ConsentLevel) => {
     if (level === consent) return;
-    setConsent(level, `Changed Vault to ${LEVELS[level - 1].title}.`);
+    setConsent(level, `Changed sharing to ${LEVELS[level - 1].title}.`);
     syncConsent(level);
-    toast({ title: `Vault set to ${LEVELS[level - 1].title}`, body: level === 1 ? "You left program insights. Nothing new is shared." : undefined });
+    toast({ title: `Sharing set to ${LEVELS[level - 1].title}`, body: level === 1 ? "You left program insights. Nothing new is shared." : undefined });
   };
 
   const withdraw = () => {
@@ -62,7 +62,7 @@ export default function VaultPage() {
 
   const del = () => {
     resetDemo();
-    setConsent(1, "Deleted my Compass data. Vault reset to Private.");
+    setConsent(1, "Deleted my Compass data. Sharing reset to Private.");
     syncConsent(1);
     setConfirmDelete(false);
     toast({ title: "Your data was deleted", body: "Reflections, taps and requests are gone. Demo data only." });
@@ -70,11 +70,11 @@ export default function VaultPage() {
 
   return (
     <div>
-      <PageHeader eyebrow="Privacy Vault" title="You decide what is shared.">
+      <PageHeader eyebrow="Profile settings" title="You decide what is shared.">
         Change your mind anytime. Every change is logged here, for you.
       </PageHeader>
 
-      <div className="grid gap-4 md:grid-cols-3" role="radiogroup" aria-label="Vault level">
+      <div className="grid gap-4 md:grid-cols-3" role="radiogroup" aria-label="Sharing level">
         {LEVELS.map((l, i) => {
           const on = hydrated && consent === l.level;
           return (

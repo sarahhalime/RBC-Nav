@@ -69,7 +69,7 @@ export default function InternGapPage() {
               checked={hydrated ? consent >= 2 : true}
               onChange={onContribute}
               label="Contribute this anonymously to program insights"
-              description="Privacy Vault Level 2. Joins groups of 10 or more. Leaders never see you individually."
+              description="Sharing Level 2 in Profile settings. Joins groups of 10 or more. Leaders never see you individually."
             />
           </div>
         </Card>

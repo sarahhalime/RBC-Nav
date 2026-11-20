@@ -88,7 +88,7 @@ export default function NfcConsole() {
   return (
     <div>
       <PageHeader
-        eyebrow="NFC demo console"
+        eyebrow="Compass card"
         title={
           <>
             Tap a moment. <span className="text-rbc-yellow">Watch the gap move.</span>

@@ -86,7 +86,7 @@ export const useCompass = create<CompassState>()(
       events: [],
       consent: 2,
       consentLog: [
-        { at: Date.UTC(2026, 9, 5, 14), action: "Joined Compass. Vault set to Private." },
+        { at: Date.UTC(2026, 9, 5, 14), action: "Joined Compass. Sharing set to Private." },
         { at: Date.UTC(2026, 9, 5, 14, 2), action: "Chose Aggregated: anonymous themes may join program insights." },
       ],
       contributeReflections: true,

@@ -77,7 +77,7 @@ export default function Landing() {
               <PlayCircle size={20} /> Start the demo
             </Magnetic>
             <Magnetic className="btn-ghost px-6 py-3.5 text-base" href="/nfc">
-              <Nfc size={18} /> NFC console
+              <Nfc size={18} /> Compass card
             </Magnetic>
           </motion.div>
           <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 1.1 }} className="mt-10 flex flex-wrap gap-8">
@@ -194,7 +194,7 @@ export default function Landing() {
         aside={
           <div className="grid gap-3 sm:grid-cols-2">
             {[
-              { icon: Lock, t: "Privacy Vault", b: "Three levels. Interns choose. Withdraw or delete anytime." },
+              { icon: Lock, t: "Profile settings", b: "Three levels. Interns choose. Withdraw or delete anytime." },
               { icon: Users, t: "Groups of 10+", b: "Smaller slices are hidden. Filter combos that could isolate people are locked." },
               { icon: ShieldCheck, t: "No individual risk scores", b: "Never for hiring, promotion, return offers or reviews." },
               { icon: EyeOff, t: "No surveillance", b: "No keystrokes, email, Teams or browsing. Missing reflections are never a signal." },
