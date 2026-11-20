@@ -2,7 +2,7 @@
   "name": "rbc-compass",
   "version": "0.1.0",
   "private": true,
-  "description": "RBC Compass: a privacy-first career companion for interns. Hackathon prototype with synthetic data.",
+  "description": "RBC Nav: a privacy-first career companion for interns. Hackathon prototype with synthetic data.",
   "scripts": {
     "dev": "next dev",
     "build": "next build",

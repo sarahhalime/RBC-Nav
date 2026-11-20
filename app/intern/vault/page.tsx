@@ -62,7 +62,7 @@ export default function VaultPage() {
 
   const del = () => {
     resetDemo();
-    setConsent(1, "Deleted my Compass data. Sharing reset to Private.");
+    setConsent(1, "Deleted my Nav data. Sharing reset to Private.");
     syncConsent(1);
     setConfirmDelete(false);
     toast({ title: "Your data was deleted", body: "Reflections, taps and requests are gone. Demo data only." });
@@ -149,7 +149,7 @@ export default function VaultPage() {
               <LogOut size={16} /> Withdraw from program insights
             </button>
             <button onClick={() => setConfirmDelete(true)} className="btn-ghost w-full justify-start border-danger/40 text-danger hover:bg-danger/10">
-              <Trash2 size={16} /> Delete my Compass data
+              <Trash2 size={16} /> Delete my Nav data
             </button>
             <Link href="/intern/support" className="btn-ghost w-full justify-start">
               <HeartHandshake size={16} /> Ask an advisor for support

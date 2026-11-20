@@ -102,9 +102,9 @@ export function TagLanding({ tagId }: { tagId: string }) {
       <div className="mx-auto flex min-h-dvh max-w-md flex-col items-center justify-center px-6 text-center">
         <CompassLogo size={56} />
         <h1 className="h-display mt-5 text-2xl">Tag not recognized</h1>
-        <p className="mt-2 text-sm text-rbc-mist/70">This link does not match a Compass nametag. Nothing was recorded.</p>
+        <p className="mt-2 text-sm text-rbc-mist/70">This link does not match a Nav nametag. Nothing was recorded.</p>
         <Link href="/" className="btn-primary mt-6">
-          Go to Compass
+          Go to Nav
         </Link>
       </div>
     );
@@ -148,10 +148,10 @@ export function TagLanding({ tagId }: { tagId: string }) {
   return (
     <div className="relative mx-auto flex min-h-dvh max-w-md flex-col px-4 pb-10 pt-[max(1.25rem,env(safe-area-inset-top))]">
       <div className="flex items-center justify-between">
-        <Link href="/" className="flex items-center gap-2" aria-label="RBC Compass">
+        <Link href="/" className="flex items-center gap-2" aria-label="RBC Nav">
           <CompassLogo size={28} success={phase === "logged" || phase === "connected"} />
           <span className="font-display text-sm font-bold text-white">
-            RBC <span className="text-rbc-yellow">Compass</span>
+            RBC <span className="text-rbc-yellow">Nav</span>
           </span>
         </Link>
         <span className="inline-flex items-center gap-1 rounded-full bg-white/[0.06] px-2.5 py-1 text-[10px] text-rbc-mist/70">
@@ -178,7 +178,7 @@ export function TagLanding({ tagId }: { tagId: string }) {
         </motion.div>
         <motion.p key={phase === "detect" ? "d" : "o"} initial={{ opacity: 0, y: 6 }} animate={{ opacity: 1, y: 0 }} className="absolute bottom-0 text-center">
           <span className="block text-xs font-semibold uppercase tracking-[0.2em] text-rbc-yellow">
-            {phase === "detect" ? "Tag detected" : isOwn ? "Your Compass tag" : `${first}'s Compass tag`}
+            {phase === "detect" ? "Tag detected" : isOwn ? "Your Nav tag" : `${first}'s Nav tag`}
           </span>
           <span className="mt-1 block font-display text-xl font-bold text-white">{owner.name}</span>
         </motion.p>

@@ -67,7 +67,7 @@ export default function RoiPage() {
   return (
     <div>
       <PageHeader eyebrow="Easy to green-light" title="Does 50 seconds a day pay for itself?">
-        Each intern spends about 50 seconds a day on Compass (we round to about one minute in the pitch). If it saves interns or their managers time elsewhere, the program pays for itself fast.
+        Each intern spends about 50 seconds a day on Nav (we round to about one minute in the pitch). If it saves interns or their managers time elsewhere, the program pays for itself fast.
       </PageHeader>
 
       <div className="grid gap-6 lg:grid-cols-[1fr_1.3fr]">

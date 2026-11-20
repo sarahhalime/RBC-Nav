@@ -47,7 +47,7 @@ export default function ExpectationsPage() {
 
   const save = () => {
     setExpectations(answers as Expectation);
-    toast({ title: "Expectation Compass saved", body: "Compass will compare this with what you experience." });
+    toast({ title: "Expectation Nav saved", body: "Nav will compare this with what you experience." });
     router.push("/intern/gap");
   };
 
@@ -60,7 +60,7 @@ export default function ExpectationsPage() {
           <CompassLogo size={56} success={done} />
         </motion.div>
         <div className="flex-1">
-          <p className="eyebrow">Expectation Compass · 60 seconds</p>
+          <p className="eyebrow">Expectation Nav · 60 seconds</p>
           <div className="mt-2 h-1.5 overflow-hidden rounded-full bg-white/10">
             <motion.div className="h-full rounded-full bg-gradient-to-r from-rbc-yellow to-rbc-sky" animate={{ width: `${progress * 100}%` }} />
           </div>
@@ -125,9 +125,9 @@ export default function ExpectationsPage() {
           </motion.div>
         ) : (
           <motion.div key="done" initial={{ opacity: 0, scale: 0.96 }} animate={{ opacity: 1, scale: 1 }} className="text-center">
-            <h1 className="h-display text-3xl sm:text-4xl">This is your compass.</h1>
+            <h1 className="h-display text-3xl sm:text-4xl">This is your nav.</h1>
             <p className="mx-auto mt-2 max-w-md text-sm text-rbc-mist/70">
-              What you want from RBC. As your weeks unfold, Compass will draw what you actually experience on top, privately.
+              What you want from RBC. As your weeks unfold, Nav will draw what you actually experience on top, privately.
             </p>
             <div className="mt-6 flex justify-center">
               <RadarChart

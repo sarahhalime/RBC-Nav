@@ -11,7 +11,7 @@ import { useCompass } from "@/lib/store/compass";
 
 const ITEMS = [
   { href: "/intern/vault", label: "Profile settings", body: "Privacy, sharing and your data", icon: Settings },
-  { href: "/nfc", label: "Compass card", body: "Tap to connect, reflect and unwrap", icon: CreditCard },
+  { href: "/nfc", label: "Nav card", body: "Tap to connect, reflect and unwrap", icon: CreditCard },
 ];
 
 export function ProfileMenu() {

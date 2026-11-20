@@ -47,14 +47,14 @@ export default function InternCard() {
           <div className="flex items-center gap-2">
             <CompassLogo size={30} />
             <span className="font-display text-[17px] font-bold text-white">
-              RBC <span className="text-rbc-yellow">Compass</span>
+              RBC <span className="text-rbc-yellow">Nav</span>
             </span>
           </div>
           <ConnectionBadge status={status} />
         </header>
 
         <motion.div initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} className="mt-8">
-          <p className="eyebrow">Intern Compass Card</p>
+          <p className="eyebrow">Intern Nav Card</p>
           <h1 className="h-display mt-2 text-4xl leading-tight">Hi, Maya Patel</h1>
           <p className="mt-2 text-rbc-mist/80">Week {WRAPPED_STATS.weeks} of {WRAPPED_STATS.weeks}. Your countdown is complete.</p>
         </motion.div>

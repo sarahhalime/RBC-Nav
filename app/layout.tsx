@@ -7,7 +7,7 @@ const sans = Plus_Jakarta_Sans({ subsets: ["latin"], variable: "--font-sans", di
 const display = Sora({ subsets: ["latin"], variable: "--font-display", display: "swap", weight: ["500", "600", "700", "800"] });
 
 export const metadata: Metadata = {
-  title: "RBC Compass",
+  title: "RBC Nav",
   description: "Retaining talent starts with listening to it. A privacy-first career companion for RBC interns. Prototype with synthetic data.",
   metadataBase: new URL(process.env.NEXT_PUBLIC_BASE_URL ?? "http://localhost:3000"),
 };

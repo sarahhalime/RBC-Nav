@@ -115,7 +115,7 @@ export default function LiveDisplay() {
         <div className="flex items-center gap-3">
           <CompassLogo size={52} />
           <span className="font-display text-[2.2vw] font-bold tracking-tight text-white">
-            RBC <span className="text-rbc-yellow">Compass</span>
+            RBC <span className="text-rbc-yellow">Nav</span>
           </span>
         </div>
         <ConnectionBadge status={status} className="px-4 py-2 text-sm" />
@@ -162,7 +162,7 @@ export default function LiveDisplay() {
             ) : (
               <p className="relative mt-[2vw] flex items-center gap-2 text-[1.1vw] text-rbc-mist/80">
                 <motion.span className="h-2 w-2 rounded-full bg-rbc-yellow" animate={{ opacity: [0.3, 1, 0.3] }} transition={{ duration: 1.4, repeat: Infinity }} />
-                Waiting for Compass Card activation...
+                Waiting for Nav Card activation...
               </p>
             )}
           </motion.div>

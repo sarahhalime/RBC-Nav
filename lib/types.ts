@@ -36,7 +36,7 @@ export type ThemeId =
   | "belonging"
   | "leaving_intent";
 
-/** Rating 1 to 5 from the Expectation Compass. A rating of 4 or 5 counts as "expected". */
+/** Rating 1 to 5 from the Expectation Nav. A rating of 4 or 5 counts as "expected". */
 export type Expectation = Record<DimensionId, number>;
 
 export interface DimensionExperience {

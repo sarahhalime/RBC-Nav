@@ -238,7 +238,7 @@ export const INTERVENTIONS: Intervention[] = [
   {
     id: "mentor_coffee",
     name: "Mentor coffee chat program",
-    description: "Biweekly 30 minute mentor chats with a shared agenda and a Compass station tap.",
+    description: "Biweekly 30 minute mentor chats with a shared agenda and a Nav station tap.",
     effects: { mentor_access: 14, feedback: 4, belonging: 3 },
     cost: "$",
     costNote: "Under $5K: coffee budget and scheduling time",

@@ -91,8 +91,8 @@ export default function InternHome() {
           >
             <Compass className="shrink-0 text-rbc-yellow" />
             <div className="flex-1">
-              <p className="font-semibold text-white">Set your Expectation Compass</p>
-              <p className="text-sm text-rbc-mist/70">60 seconds. Tell us what you want from RBC so Compass can help you get it.</p>
+              <p className="font-semibold text-white">Set your Expectation Nav</p>
+              <p className="text-sm text-rbc-mist/70">60 seconds. Tell us what you want from RBC so Nav can help you get it.</p>
             </div>
             <ArrowRight className="text-rbc-yellow transition-transform group-hover:translate-x-1" />
           </Link>
@@ -178,7 +178,7 @@ export default function InternHome() {
         <Card delay={0.15}>
           <button onClick={() => setAsk(true)} className="flex h-full w-full flex-col items-start text-left">
             <MessageCircleQuestion className="text-rbc-yellow" />
-            <p className="mt-3 font-display text-lg font-bold text-white">Ask Compass</p>
+            <p className="mt-3 font-display text-lg font-bold text-white">Ask Nav</p>
             <p className="text-sm text-rbc-mist/70">Quick answers about the program. Private.</p>
           </button>
         </Card>
@@ -209,7 +209,7 @@ export default function InternHome() {
             <motion.div
               role="dialog"
               aria-modal="true"
-              aria-label="Ask Compass"
+              aria-label="Ask Nav"
               initial={{ scale: 0.95, y: 20 }}
               animate={{ scale: 1, y: 0 }}
               exit={{ scale: 0.95, y: 20 }}
@@ -217,7 +217,7 @@ export default function InternHome() {
               className="glass-strong w-full max-w-lg rounded-card p-6"
             >
               <div className="flex items-center justify-between">
-                <p className="font-display text-lg font-bold text-white">Ask Compass</p>
+                <p className="font-display text-lg font-bold text-white">Ask Nav</p>
                 <button aria-label="Close" onClick={() => setAsk(false)} className="text-rbc-mist/60 hover:text-white">
                   <X size={18} />
                 </button>
