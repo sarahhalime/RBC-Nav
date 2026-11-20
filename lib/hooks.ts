@@ -7,7 +7,7 @@ import { applyEvents } from "./gap";
 import { useCompass } from "./store/compass";
 import type { Intern } from "./types";
 
-/** Seed + live tap events + Maya's current Vault level. Same math as the server. */
+/** Seed + live tap events + Maria's current Vault level. Same math as the server. */
 export function useInterns(): Intern[] {
   const events = useCompass((s) => s.events);
   const consent = useCompass((s) => s.consent);

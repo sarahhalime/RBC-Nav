@@ -4,6 +4,7 @@
  * All names, points and awards are synthetic.
  */
 
+export const INTERN_NAME = "Maria Patel";
 export const INITIAL_POINTS = 1250;
 export const AWARD_POINTS = 250;
 /** Hard ceiling so a stuck button or a script cannot run the counter away during a demo. */
@@ -20,11 +21,11 @@ export const CATEGORIES = [
 export type Category = (typeof CATEGORIES)[number];
 
 export const SUGGESTED_MESSAGES: Record<Category, string> = {
-  Collaboration: "Maya brought three teams together to ship the payments fix ahead of schedule.",
-  Innovation: "Maya's prototype for instant receipts gave us a new way to think about the client experience.",
-  Leadership: "Maya stepped up to run our sprint demo and made space for every voice in the room.",
-  "Continuous Learning": "Maya picked up Kotlin coroutines in two weeks and taught the rest of the interns.",
-  "Making a Difference": "Maya's accessibility fixes mean more clients can bank with confidence.",
+  Collaboration: "Maria brought three teams together to ship the payments fix ahead of schedule.",
+  Innovation: "Maria's prototype for instant receipts gave us a new way to think about the client experience.",
+  Leadership: "Maria stepped up to run our sprint demo and made space for every voice in the room.",
+  "Continuous Learning": "Maria picked up Kotlin coroutines in two weeks and taught the rest of the interns.",
+  "Making a Difference": "Maria's accessibility fixes mean more clients can bank with confidence.",
 };
 
 /** Fictional Wrapped statistics from the brief. Recognition is live, everything else is fixed. */
@@ -62,7 +63,7 @@ export interface LiveDemoState {
 
 export function initialState(now = Date.now()): LiveDemoState {
   return {
-    internName: "Maya Patel",
+    internName: INTERN_NAME,
     recognitionPoints: INITIAL_POINTS,
     wrappedUnlocked: false,
     unlockCount: 0,
@@ -82,6 +83,8 @@ export function normalize(raw: unknown): LiveDemoState | null {
   return {
     ...base,
     ...r,
+    // Always the current demo intern, even if an older record stored a previous name.
+    internName: INTERN_NAME,
     recognitions: r.recognitions ?? {},
     latestRecognition: r.latestRecognition ?? null,
     unlockedAt: r.unlockedAt ?? null,

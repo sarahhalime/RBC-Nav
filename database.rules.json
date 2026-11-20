@@ -7,7 +7,7 @@
         ".read": "$session.matches(/^[a-z0-9-]{3,40}$/)",
         ".write": "$session.matches(/^[a-z0-9-]{3,40}$/)",
         ".validate": "newData.hasChildren(['internName', 'recognitionPoints', 'wrappedUnlocked', 'unlockCount', 'resetAt', 'updatedAt'])",
-        "internName": { ".validate": "newData.val() === 'Maya Patel'" },
+        "internName": { ".validate": "newData.val() === 'Maria Patel'" },
         "recognitionPoints": {
           ".validate": "newData.isNumber() && (newData.val() === 1250 || (data.exists() && (newData.val() === data.val() || newData.val() === data.val() + 250))) && newData.val() <= 11250"
         },

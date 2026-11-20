@@ -1,7 +1,7 @@
 import type { DimensionId, Expectation, Intern } from "./types";
 
 export const MAYA_PROFILE = {
-  first: "Maya",
+  first: "Maria",
   mentor: "Daniel Okafor",
   manager: "Sofia Tremblay",
   lastMentorChat: "3 weeks ago",

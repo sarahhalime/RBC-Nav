@@ -73,7 +73,7 @@ export default function ManagerCard() {
               </motion.div>
               <h1 className="h-display mt-6 text-4xl">Recognition sent!</h1>
               <p className="mt-2 text-rbc-mist/80">
-                Maya was recognized for <span className="font-semibold text-rbc-yellow">{done.category}</span>.
+                Maria was recognized for <span className="font-semibold text-rbc-yellow">{done.category}</span>.
               </p>
               <p className="num text-glow mt-6 text-6xl font-extrabold text-rbc-yellow">+{done.points}</p>
               <p className="num mt-2 text-xl text-white">
@@ -152,7 +152,7 @@ export default function ManagerCard() {
                   onChange={(e) => setMessage(e.target.value)}
                   maxLength={MAX_MESSAGE}
                   rows={4}
-                  placeholder="What did Maya do that made a difference?"
+                  placeholder="What did Maria do that made a difference?"
                   className="mt-2 w-full resize-none rounded-2xl border border-white/10 bg-white/[0.05] p-4 text-base text-white placeholder:text-rbc-mist/40 focus:border-rbc-yellow/60 focus:outline-none"
                 />
                 <p className="text-right text-[11px] text-rbc-mist/50">

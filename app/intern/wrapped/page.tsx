@@ -88,7 +88,7 @@ export default function WrappedPage() {
             <h1 className="h-display mt-3 text-5xl leading-[1.02]">
               Your Wrapped,
               <br />
-              Maya.
+              Maria.
             </h1>
           </Line>
           <Line delay={0.6} className="mt-4 text-rbc-mist/70">
@@ -270,7 +270,7 @@ export default function WrappedPage() {
                 RBC <span className="text-rbc-gold">Nav</span> Wrapped
               </span>
             </div>
-            <p className="mt-1 text-xs text-rbc-mist/50">Maya · Weeks 5 to 6</p>
+            <p className="mt-1 text-xs text-rbc-mist/50">Maria · Weeks 5 to 6</p>
             <div className="mt-6 grid grid-cols-3 gap-3 text-center">
               {[
                 { v: data.connections, l: "connections" },

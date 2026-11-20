@@ -137,7 +137,7 @@ function Reflect() {
                 </button>
               </div>
               <button onClick={() => setText(SAMPLE_REFLECTION)} className="mt-2 inline-flex items-center gap-1 text-xs font-semibold text-rbc-sky hover:underline">
-                <Wand2 size={13} /> Use Maya&apos;s sample
+                <Wand2 size={13} /> Use Maria&apos;s sample
               </button>
 
               <div className="mt-5 rounded-2xl bg-white/[0.04] p-4">

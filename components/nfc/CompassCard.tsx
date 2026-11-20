@@ -8,7 +8,7 @@ import { TapRipple } from "./TapRipple";
 
 /** Black and gold NFC nametag. Pointer-driven 3D tilt with a moving specular highlight. */
 export function CompassCard({
-  name = "Maya Chen",
+  name = "Maria Chen",
   role = "Technology Intern · Toronto",
   tagId = "maya-7f3a",
   tapKey = 0,

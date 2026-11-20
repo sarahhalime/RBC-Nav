@@ -37,7 +37,7 @@ describe("seed", () => {
 
   it("includes the hero personas", () => {
     const maya = getSeed().find((i) => i.id === MAYA_ID)!;
-    expect(maya.name).toBe("Maya Chen");
+    expect(maya.name).toBe("Maria Chen");
     expect(maya.tagId).toBe(MAYA_TAG);
     expect(maya.cohort).toBe("Toronto");
     expect(maya.area).toBe("Technology");
@@ -112,7 +112,7 @@ describe("computeGap", () => {
 });
 
 describe("NFC console magic moment", () => {
-  it("Maya plus 7 attendees at a Cross-Team Lunch closes the program cross-team gap by 3 pts", () => {
+  it("Maria plus 7 attendees at a Cross-Team Lunch closes the program cross-team gap by 3 pts", () => {
     const seed = getSeed();
     const crowd = pickCrowd(seed, "cross_team_lunch", 7);
     expect(crowd).toHaveLength(7);
@@ -204,7 +204,7 @@ describe("events", () => {
       kind: "connect",
       tagId: MAYA_TAG,
       internId: MAYA_ID,
-      internName: "Maya Chen",
+      internName: "Maria Chen",
       status: "pending",
       dimensions: ["network"],
       aggregated: true,

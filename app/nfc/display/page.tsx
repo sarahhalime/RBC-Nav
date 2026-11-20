@@ -190,7 +190,7 @@ export default function LiveDisplay() {
               <motion.div initial={{ scale: 0, rotate: -40 }} animate={{ scale: 1, rotate: 0 }} transition={{ delay: 0.2, type: "spring" }} className="mx-auto grid h-[6vw] w-[6vw] min-h-14 min-w-14 place-items-center rounded-full bg-rbc-yellow text-rbc-ink">
                 <NoticeIcon style={{ width: "3vw", height: "3vw" }} />
               </motion.div>
-              <p className="h-display mt-[1.5vw] text-[3.4vw] leading-tight">Congratulations, Maya!</p>
+              <p className="h-display mt-[1.5vw] text-[3.4vw] leading-tight">Congratulations, Maria!</p>
               <p className="mt-2 text-[1.8vw] text-rbc-mist/90">
                 You&apos;ve received recognition for <span className="font-bold text-rbc-yellow">{notice.category}</span>.
               </p>

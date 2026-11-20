@@ -96,7 +96,7 @@ export function ConnectDemo() {
     if (status === "connected") {
       vibrate([40, 60, 40]);
       setConnected(true);
-      toast({ title: "Maya and Priya connected", body: "Different teams, so it counts toward Cross-team and Network." });
+      toast({ title: "Maria and Priya connected", body: "Different teams, so it counts toward Cross-team and Network." });
     }
   };
 
@@ -119,10 +119,10 @@ export function ConnectDemo() {
           </button>
         )}
       </div>
-      <p className="mb-4 text-xs text-rbc-mist/60">Maya and Priya tap tags. Both phones ask first. A connection only exists after both say yes.</p>
+      <p className="mb-4 text-xs text-rbc-mist/60">Maria and Priya tap tags. Both phones ask first. A connection only exists after both say yes.</p>
       <div className="grid grid-cols-2 gap-3">
-        <Phone owner="Maya" other="Priya Nair" otherRole="Capital Markets · Global Markets Analytics" state={maya} connected={connected} onApprove={() => approve("maya")} />
-        <Phone owner="Priya" other="Maya Chen" otherRole="Technology · Mobile Banking" state={priya} connected={connected} onApprove={() => approve("priya")} />
+        <Phone owner="Maria" other="Priya Nair" otherRole="Capital Markets · Global Markets Analytics" state={maya} connected={connected} onApprove={() => approve("maya")} />
+        <Phone owner="Priya" other="Maria Chen" otherRole="Technology · Mobile Banking" state={priya} connected={connected} onApprove={() => approve("priya")} />
       </div>
     </Card>
   );

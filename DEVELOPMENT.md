@@ -19,12 +19,12 @@ Node 18.17+ (tested on Node 22).
 
 ## Pitch path (under 90 seconds)
 
-Press **Guided demo** (bottom right) or **Start the demo** on the landing page. Use the arrow keys or Next. The narrator walks through Maya's journey:
+Press **Guided demo** (bottom right) or **Start the demo** on the landing page. Use the arrow keys or Next. The narrator walks through Maria's journey:
 
-1. `/t/maya-7f3a`: Maya taps her nametag and signs in
+1. `/t/maya-7f3a`: Maria taps her nametag and signs in
 2. `/intern`: daily check-in
-3. `/intern/reflect`: press "Use Maya's sample", then Save. Private analysis finds a mentorship concern and offers support.
-4. `/nfc`: pick **Cross-Team Lunch**, press **Simulate tap**. The program cross-team gap drops from 35 to 32 and Maya's Wrapped updates.
+3. `/intern/reflect`: press "Use Maria's sample", then Save. Private analysis finds a mentorship concern and offers support.
+4. `/nfc`: pick **Cross-Team Lunch**, press **Simulate tap**. The program cross-team gap drops from 35 to 32 and Maria's Wrapped updates.
 5. `/intern/wrapped`: story-style recap with the new experience
 6. `/insights`: leader view. Calgary mentor time alert. Toggle **Show privacy guardrail**.
 7. `/insights#simulator`: Gap Closer. Pick an intervention, set intensity, press **Green-light this**.

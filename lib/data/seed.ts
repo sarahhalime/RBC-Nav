@@ -95,7 +95,7 @@ const MAYA_RATINGS: Expectation = {
   network: 4,
 };
 
-/** Dimensions Maya is forced to not experience (her story: she rarely sees her mentor). */
+/** Dimensions Maria is forced to not experience (her story: she rarely sees her mentor). */
 const MAYA_LOW: DimensionId[] = ["mentor_access", "cross_team"];
 
 export function generateSeed(): Intern[] {
@@ -109,7 +109,7 @@ export function generateSeed(): Intern[] {
       for (let k = 0; k < count; k++) slots.push({ cohort, area: AREAS[ai] });
     });
   }
-  // Maya: Toronto Technology. Priya: Toronto Capital Markets. Pull their slots to the front.
+  // Maria: Toronto Technology. Priya: Toronto Capital Markets. Pull their slots to the front.
   const mayaSlot = slots.findIndex((s) => s.cohort === "Toronto" && s.area === "Technology");
   const [maya] = slots.splice(mayaSlot, 1);
   const priyaSlot = slots.findIndex((s) => s.cohort === "Toronto" && s.area === "Capital Markets");
@@ -121,7 +121,7 @@ export function generateSeed(): Intern[] {
     let tagId: string;
     let team: string;
     if (i === 0) {
-      name = "Maya Chen";
+      name = "Maria Chen";
       tagId = MAYA_TAG;
       team = "Mobile Banking";
     } else if (i === 1) {

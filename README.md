@@ -252,7 +252,7 @@ Our signature interactive demo genuinely works in real time across two phones an
 |---|---|---|
 | Laptop on projector | `https://<your-domain>/nfc/display` | Live balance, locked Wrapped, recognition notifications, cinematic Intern Wrapped |
 | Leadership Nav Card: Tap to Recognize | `https://<your-domain>/nfc/manager` | Judge picks a category, writes a message, awards 250 points |
-| Intern Nav Card: Tap to Unwrap | `https://<your-domain>/nfc/intern` | Maya's portal, live points, Unlock My Wrapped |
+| Intern Nav Card: Tap to Unwrap | `https://<your-domain>/nfc/intern` | Maria's portal, live points, Unlock My Wrapped |
 
 No app needs installing. Each card stores a plain HTTPS URL record, and the phone opens it natively.
 
@@ -322,10 +322,10 @@ Open `https://<your-domain>/nfc/display`. The badge in the top right should say 
 ### Live presentation sequence
 
 1. Laptop on `/nfc/display`, fullscreen, showing **Live**, 1,250 points and "Waiting for Nav Card activation...".
-2. A judge taps the **Leadership Nav Card**, awards Maya recognition and 250 points.
+2. A judge taps the **Leadership Nav Card**, awards Maria recognition and 250 points.
 3. Everyone watches the balance rise live with the notification and gold confetti.
 4. Another judge taps the **Intern Nav Card** and presses **Unlock My Wrapped**.
-5. The display reveals Maya's Wrapped: 16 weeks, 12 skills, 18 connections, 6 projects, 8 milestones, the live points total and the new achievements. It ends with "Your internship ends. Your journey doesn't."
+5. The display reveals Maria's Wrapped: 16 weeks, 12 skills, 18 connections, 6 projects, 8 milestones, the live points total and the new achievements. It ends with "Your internship ends. Your journey doesn't."
 
 Wrapped auto-advances and holds on the final slide. Arrow keys move between slides and `Esc` closes it. After closing, the locked card on the display becomes a **Replay Wrapped** button.
 

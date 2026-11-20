@@ -4,7 +4,7 @@ import { AWARD_POINTS, INITIAL_POINTS, MAX_AWARDS, applyAward, applyUnlock, init
 const award = (id: string) => ({ id, category: "Collaboration" as const, message: "Great teamwork" });
 
 describe("live demo model", () => {
-  it("starts Maya at 1,250 points, locked", () => {
+  it("starts Maria at 1,250 points, locked", () => {
     const s = initialState(1);
     expect(s.recognitionPoints).toBe(INITIAL_POINTS);
     expect(s.wrappedUnlocked).toBe(false);
@@ -65,9 +65,14 @@ describe("live demo model", () => {
   });
 
   it("normalizes Firebase snapshots that dropped empty fields", () => {
-    const n = normalize({ internName: "Maya Patel", recognitionPoints: 1500, wrappedUnlocked: false, unlockCount: 0, resetAt: 1, updatedAt: 1 });
+    const n = normalize({ internName: "Maria Patel", recognitionPoints: 1500, wrappedUnlocked: false, unlockCount: 0, resetAt: 1, updatedAt: 1 });
     expect(n?.recognitions).toEqual({});
     expect(n?.latestRecognition).toBeNull();
     expect(normalize(null)).toBeNull();
+  });
+
+  it("always reports the current intern name, even from an older record", () => {
+    const n = normalize({ internName: "Maya Patel", recognitionPoints: 1250, wrappedUnlocked: false, unlockCount: 0, resetAt: 1, updatedAt: 1 });
+    expect(n?.internName).toBe("Maria Patel");
   });
 });

@@ -7,12 +7,12 @@ export interface DemoStep {
   text: string;
 }
 
-/** Maya's journey. About 10 to 12 seconds per step keeps the full story under 90 seconds. */
+/** Maria's journey. About 10 to 12 seconds per step keeps the full story under 90 seconds. */
 export const DEMO_STEPS: DemoStep[] = [
   {
     path: "/t/maya-7f3a",
     role: "intern",
-    title: "1. Maya taps her nametag",
+    title: "1. Maria taps her nametag",
     text: "Her RBC nametag holds only a link. She signs in with RBC and lands in Nav. No location, no tracking.",
   },
   {
@@ -25,13 +25,13 @@ export const DEMO_STEPS: DemoStep[] = [
     path: "/intern/reflect",
     role: "intern",
     title: "3. Reflect and get private insight",
-    text: "Maya writes that she rarely sees her mentor. Nav finds the theme on device and offers support, only if she wants it.",
+    text: "Maria writes that she rarely sees her mentor. Nav finds the theme on device and offers support, only if she wants it.",
   },
   {
     path: "/nfc",
     role: "intern",
     title: "4. The magic moment: tap at a station",
-    text: "Pick Cross-Team Lunch and press Simulate tap. Watch the program gap shrink and Maya's Wrapped update live.",
+    text: "Pick Cross-Team Lunch and press Simulate tap. Watch the program gap shrink and Maria's Wrapped update live.",
   },
   {
     path: "/intern/wrapped",

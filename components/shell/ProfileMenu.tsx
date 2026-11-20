@@ -70,7 +70,7 @@ export function ProfileMenu() {
                 MC
               </span>
               <div className="min-w-0">
-                <p className="font-display font-semibold text-white">Maya Chen</p>
+                <p className="font-display font-semibold text-white">Maria Chen</p>
                 <p className="truncate text-xs text-rbc-mist/60">
                   Mobile Banking, Toronto. Week {CURRENT_WEEK}
                 </p>

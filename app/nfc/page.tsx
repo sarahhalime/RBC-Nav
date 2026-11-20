@@ -76,8 +76,8 @@ export default function NfcConsole() {
         title: closed > 0 ? `Gap closed by ${closed} pts` : "Experience logged",
         body:
           closed > 0
-            ? `${dimShort(primary)} gap: ${before} to ${after} pts program wide. Added to Maya's Wrapped.`
-            : `Added to Maya's Wrapped. ${withCrowd ? "" : "Add attendees to see the program gap move."}`,
+            ? `${dimShort(primary)} gap: ${before} to ${after} pts program wide. Added to Maria's Wrapped.`
+            : `Added to Maria's Wrapped. ${withCrowd ? "" : "Add attendees to see the program gap move."}`,
       });
       setTimeout(() => setSuccess(false), 2500);
     }, 140 * (crowd.length + 1) + 200);
@@ -221,7 +221,7 @@ export default function NfcConsole() {
           <Card delay={0.1}>
             <div className="mb-4 flex items-center gap-2">
               <Users size={17} className="text-rbc-sky" />
-              <h2 className="font-display text-lg font-bold text-white">Maya&apos;s Wrapped, live</h2>
+              <h2 className="font-display text-lg font-bold text-white">Maria&apos;s Wrapped, live</h2>
             </div>
             <div className="grid grid-cols-3 gap-2">
               {[
@@ -296,7 +296,7 @@ export default function NfcConsole() {
                   <h2 className="text-sm font-semibold text-white">QR fallback</h2>
                   <InfoTip content="If the physical tap fails, scan this. It opens the same /t/ link the NFC tag stores." />
                 </div>
-                <p className="mt-1 text-xs text-rbc-mist/60">Scan with any phone camera to open Maya&apos;s tag page.</p>
+                <p className="mt-1 text-xs text-rbc-mist/60">Scan with any phone camera to open Maria&apos;s tag page.</p>
                 <p className="mt-2 break-all font-mono text-[11px] text-rbc-sky">{tUrl}</p>
                 <a href={`/t/${MAYA_TAG}`} target="_blank" rel="noreferrer" className="mt-2 inline-flex items-center gap-1 text-xs font-semibold text-rbc-yellow hover:underline">
                   <Smartphone size={13} /> Open phone view
